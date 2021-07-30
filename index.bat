@@ -9,7 +9,7 @@ wmic path win32_VideoController get name
 echo -= Motherboard==-
 wmic baseboard get product,Manufacturer.
 echo -===== RAM =====-
-wmic MEMORYCHIP get BankLabel, DeviceLocator, Capacity, Speed
+wmic MEMORYCHIP get  DeviceLocator, Capacity, Speed
 echo -==== DRIVE ====-
 wmic diskdrive get model,serialNumber,size,mediaType
 pause
